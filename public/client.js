@@ -1,3 +1,5 @@
+import { io } from "https://cdn.socket.io/4.3.0/socket.io.esm.min.js";
+
 let socket, uid, ctx;
 let state = { clients: {}, count: 0 };
 
