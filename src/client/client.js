@@ -4,7 +4,7 @@ let state = { clients: {}, count: 0 };
 window.onload = () => {
   discon.style.display = "none";
 
-  socket = io("http://localhost:3000");
+  socket = io("https://cursores-server.onrender.com/");
 
   let username = prompt("Introduce tu nombre de usuario:");
   if (!username) username = "Usuario";
