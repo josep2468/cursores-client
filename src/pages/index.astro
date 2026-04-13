@@ -1,0 +1,42 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cursores-Josep</title>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script type="module" src="/src/client/client.js"></script>
+
+    <style>
+      .message {
+        border: 2px solid #000;
+        background-color: #f88;
+        padding: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      #usercount {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        padding: 6px 10px;
+        border: 1px solid #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="usercount">Usuarios conectados: 0</div>
+
+    <canvas id="canvas" style="cursor:none"></canvas>
+
+    <div class="message" id="discon">DESCONECTADO</div>
+    <div class="message" id="connect">CONECTANDO...</div>
+  </body>
+</html>
